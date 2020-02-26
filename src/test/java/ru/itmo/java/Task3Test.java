@@ -3,7 +3,6 @@ package ru.itmo.java;
 import org.junit.Assert;
 import org.junit.Test;
 
-<<<<<<< HEAD
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
@@ -17,28 +16,10 @@ public class Task3Test {
         Assert.assertArrayEquals(new int[]{}, instance.getShiftedArray(null));
         Assert.assertArrayEquals(new int[]{0, 0, 1, 0, 0}, instance.getShiftedArray(new int[]{0, 1, 0, 0, 0}));
         Assert.assertArrayEquals(new int[]{5, 5, 5, 4, 4}, instance.getShiftedArray(new int[]{5, 5, 4, 4, 5}));
-=======
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
-
-@SuppressWarnings({"UnnecessaryBoxing", "deprecation", "CachedNumberConstructorCall", "RedundantCast"})
-public class Task3Test {
-
-    @Test
-    public void test_getShiftedArray() {
-        Task3 inst = new Task3();
-
-        Assert.assertArrayEquals(new int[]{5, 1, 2, 3, 4}, inst.getShiftedArray(new int[]{1, 2, 3, 4, 5}));
-        Assert.assertArrayEquals(new int[]{0, 0, 1, 0, 0}, inst.getShiftedArray(new int[]{0, 1, 0, 0, 0}));
-        Assert.assertArrayEquals(new int[]{5, 5, 5, 4, 4}, inst.getShiftedArray(new int[]{5, 5, 4, 4, 5}));
->>>>>>> origin/add-tasks-afanay
     }
 
     @Test
     public void test_getMaxProduct() {
-<<<<<<< HEAD
         Assert.assertEquals(0, instance.getMaxProduct(null));
         Assert.assertEquals(0, instance.getMaxProduct(new int[]{}));
         Assert.assertEquals(15, instance.getMaxProduct(new int[]{5, 3}));
@@ -46,37 +27,19 @@ public class Task3Test {
         Assert.assertEquals(20, instance.getMaxProduct(new int[]{4, 2, 3, 4, 5}));
         Assert.assertEquals(20, instance.getMaxProduct(new int[]{5, 1, 3, 4, 1}));
         Assert.assertEquals(9, instance.getMaxProduct(new int[]{3, 1, 3, 3, 1}));
-=======
-        Task3 inst = new Task3();
-
-        Assert.assertEquals(15, inst.getMaxProduct(new int[]{5, 3}));
-        Assert.assertEquals(25, inst.getMaxProduct(new int[]{5, 2, 3, 4, 5}));
-        Assert.assertEquals(20, inst.getMaxProduct(new int[]{4, 2, 3, 4, 5}));
-        Assert.assertEquals(20, inst.getMaxProduct(new int[]{5, 1, 3, 4, 1}));
-        Assert.assertEquals(9, inst.getMaxProduct(new int[]{3, 1, 3, 3, 1}));
->>>>>>> origin/add-tasks-afanay
     }
 
     @Test
     public void test_getABpercentage() {
-<<<<<<< HEAD
         Assert.assertEquals(40, instance.getABpercentage("fatyb"));
         Assert.assertEquals(0, instance.getABpercentage(""));
         Assert.assertEquals(0, instance.getABpercentage(null));
         Assert.assertEquals(60, instance.getABpercentage("aBgac"));
         Assert.assertEquals(16, instance.getABpercentage("nbyurt"));
-=======
-        Task3 inst = new Task3();
-
-        Assert.assertEquals(40, inst.getABpercentage("fatyb"));
-        Assert.assertEquals(60, inst.getABpercentage("aBgac"));
-        Assert.assertEquals(16, inst.getABpercentage("nbyurt"));
->>>>>>> origin/add-tasks-afanay
     }
 
     @Test
     public void test_isPalindrome() {
-<<<<<<< HEAD
         Assert.assertTrue(instance.isPalindrome("радар"));
         Assert.assertTrue(instance.isPalindrome("топот"));
         Assert.assertTrue(instance.isPalindrome("ротатор"));
@@ -85,21 +48,10 @@ public class Task3Test {
         Assert.assertTrue(instance.isPalindrome("акка"));
         Assert.assertFalse(instance.isPalindrome("итмо"));
         Assert.assertFalse(instance.isPalindrome("тапок"));
-=======
-        Task3 inst = new Task3();
-
-        Assert.assertTrue(inst.isPalindrome("радар"));
-        Assert.assertTrue(inst.isPalindrome("топот"));
-        Assert.assertTrue(inst.isPalindrome("ротатор"));
-        Assert.assertTrue(inst.isPalindrome("акка"));
-        Assert.assertFalse(inst.isPalindrome("итмо"));
-        Assert.assertFalse(inst.isPalindrome("тапок"));
->>>>>>> origin/add-tasks-afanay
     }
 
     @Test
     public void test_getEncodedString() {
-<<<<<<< HEAD
         Assert.assertEquals("a3b3c1a2c1b1", instance.getEncodedString("aaabbbcaacb"));
         Assert.assertEquals("a7", instance.getEncodedString("aaaaaaa"));
         Assert.assertEquals("a1b2a1", instance.getEncodedString("abba"));
@@ -114,7 +66,7 @@ public class Task3Test {
         assertThat(instance.isPermutation("ABCdef", "ABcdef"), is(false));
         assertThat(instance.isPermutation("null", null), is(false));
         assertThat(instance.isPermutation(null, null), is(false));
-        assertThat(instance.isPermutation("", ""), is(false));
+        assertThat(instance.isPermutation("", ""), is(true));
         assertThat(instance.isPermutation(" a", " a "), is(false));
         assertThat(instance.isPermutation(" a  ", "  a "), is(true));
     }
@@ -124,7 +76,7 @@ public class Task3Test {
         assertThat(instance.isUniqueString("abcdefg"), is(true));
         assertThat(instance.isUniqueString("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"), is(false));
         assertThat(instance.isUniqueString(null), is(false));
-        assertThat(instance.isUniqueString(""), is(false));
+        assertThat(instance.isUniqueString(""), is(true));
         assertThat(instance.isUniqueString(" space "), is(false));
         assertThat(instance.isUniqueString("wtf"), is(true));
     }
@@ -163,14 +115,4 @@ public class Task3Test {
 
 
     }
-=======
-        Task3 inst = new Task3();
-
-        Assert.assertEquals("a3b3c1a2c1b1", inst.getEncodedString("aaabbbcaacb"));
-        Assert.assertEquals("a7", inst.getEncodedString("aaaaaaa"));
-        Assert.assertEquals("a1b2a1", inst.getEncodedString("abba"));
-        Assert.assertEquals("b1", inst.getEncodedString("b"));
-    }
-
->>>>>>> origin/add-tasks-afanay
 }
