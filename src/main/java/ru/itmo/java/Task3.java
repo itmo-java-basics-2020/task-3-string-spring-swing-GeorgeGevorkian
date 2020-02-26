@@ -1,9 +1,14 @@
 package ru.itmo.java;
 
+<<<<<<< HEAD
+=======
+@SuppressWarnings("all")
+>>>>>>> origin/add-tasks-afanay
 public class Task3 {
 
     /**
      * Напишите функцию, которая принимает массив целых чисел и циклически сдвигает элементы этого массива вправо:
+<<<<<<< HEAD
      * A[0] -> A[1], A[1] -> A[2] .. A[length - 1] -> A[0].
      * Если инпут равен null - вернуть пустой массив
      */
@@ -21,6 +26,22 @@ public class Task3 {
      */
     int getMaxProduct(int[] inputArray) {
         throw new UnsupportedOperationException(); // TODO solve
+=======
+     * A[0] -> A[1], A[1] -> A[2] .. A[length - 1] -> A[0]
+     */
+    int[] getShiftedArray(int[] inputArray) {
+        return new int[1]; //your code here
+    }
+
+    /**
+     * Напишите функцию, которая принимает массив целых чисел и возвращает максимальное значение произведения из двух его элементов.
+     * Если массив состоит из одного элемента, то функция возвращает этот элемент.
+     *
+     * Пример: 2 4 6 -> 24
+     */
+    int getMaxProduct(int[] inputArray) {
+        return 0; //your code here
+>>>>>>> origin/add-tasks-afanay
     }
 
     /**
@@ -31,6 +52,7 @@ public class Task3 {
      * Пример: acbr -> 50
      */
     int getABpercentage(String input) {
+<<<<<<< HEAD
         throw new UnsupportedOperationException(); // TODO solve
     }
 
@@ -96,5 +118,23 @@ public class Task3 {
      */
     int getStringsStartWithPrefix(String[] inputStrings, String prefix) {
         return 0; // TODO solve
+=======
+        return 0; //your code here
+    }
+
+    /**
+     * Напишите функцию, которая определяет, является ли входная строка палидромом
+     */
+    boolean isPalindrome(String input) {
+        return false; //your code here
+    }
+
+    /**
+     * Напииште функцию, которая принимает строку вида "bbcaaaak" и кодирует ее в формат вида "b2c1a4k1",
+     * где группы одинаковых символов заменены на один символ и кол-во этих символов идущих подряд в строке
+     */
+    String getEncodedString(String input) {
+        return ""; //your code here
+>>>>>>> origin/add-tasks-afanay
     }
 }
